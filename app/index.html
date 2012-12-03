@@ -9,14 +9,18 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
+        <link rel="icon" type="image/ico" href="./favicon.ico">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
         <script src="scripts/vendor/modernizr.min.js"></script>
     </head>
     <body>
         <div class="container-fluid container row-fluid">
             <div class="span10" id="show_data_table"></div>
+        </div>
+        <div class="ft">
+            <p>&copy; 2010 - <script type="text/javascript">document.write(new Date().getFullYear());</script> 豌豆实验室</p>
         </div>
         <script type="text/template" id="data_table">
             <h3><%= channel %></h3>
@@ -35,6 +39,22 @@
                 <td><%= date %></td>
                 <td><%= users %></td>
             </tr>
+        </script>
+        <script type="text/template" id="data_not_found">
+            <div class="hd">
+                <h1><a href="/" class="logo">豌豆荚</a></h1>
+            </div>
+            <div class="bd">
+                <div class="wrap">
+                    <div class="cuteimg">
+                        <img src="http://img.wandoujia.com/error/500.jpg" alt="500">
+                    </div>
+                    <h3>没有数据 :(</h3>
+                    <p>
+                        给您带来的不便我们深表歉意。
+                    </p>
+                </div>
+            </div>
         </script>
   
     

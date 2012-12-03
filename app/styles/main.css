@@ -1,1 +1,28 @@
-@import "compass_twitter_bootstrap";
+*{margin:0;padding:0; color: #333;}
+a{color:#38d;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.hd {height:72px;background:#fff url(http://img.wandoujia.com/style/images/wdj/common_sprite.png) repeat-x 0 -270px;margin-bottom:20px;}
+.hd h1{width:720px;margin:0 auto; position:relative;}
+.hd .logo{float:left;font-weight:normal;text-indent:-9866px;margin:0 60px 0 0;line-height:1;text-decoration:none;background:url(http://img.wandoujia.com/style/images/wdj/common_sprite.png?v=111801) no-repeat -60px -100px;width:142px;height:61px}
+.bd .wrap{
+    width: 720px; margin: 0 auto; position:relative;
+}
+.bd .cuteimg {float: left;margin-right: 30px;height:400px;width:290px;}
+.bd h3 {
+    font-family:"Helvetica Neue",Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti", sans-serif;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight:normal;
+    margin-bottom: 12px;
+    padding-top:72`px;
+}
+.bd p, .ft p{
+    font-size: 14px;
+    line-height: 1.8;
+    font-family:"Helvetica Neue",Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "STXihei", "simsum", sans-serif;  
+}
+.ft p{
+    color: #999;    
+    text-align:center;
+    margin:0 auto;
+}

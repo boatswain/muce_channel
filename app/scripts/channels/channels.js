@@ -21,8 +21,10 @@ define([], function() {
             var url = 'channel.wandoujia.com/data/' + search.split('=')[1];
             getChannelData(url).done(function(data) {
                 if ( data.length == 0) {
-                    alert('Sorry, No data, please contact your Wandou cooperator');
-                }
+                    var tpl = _.template($('#data_not_found').html());
+                    $('#show_data_table').html(tpl);
+                    return;
+                };
                 var table = _.template($('#data_table').html(), {channel: data[0].channel});
                 $('#show_data_table').append(table);
                 var tpl = '';
