@@ -25,14 +25,15 @@ define([], function() {
                     $('#show_data_table').html(tpl);
                     return;
                 };
-                var table = _.template($('#data_table').html(), {channel: data[0].channel});
+                var channel = data[0].channel;
+                var table = _.template($('#data_table').html(), {channel: channel});
                 $('#show_data_table').append(table);
                 var tpl = '';
                 for (i in data) {
                     var dateStr = data[i].date;
                     var date = dateStr.substring(0,4) + '-' + dateStr.substring(4,6) + '-' + dateStr.substring(6,8);
                     var users = data[i].users;
-                    tpl += _.template($('#data_row').html(), {date : date, users : users});
+                    tpl += _.template($('#data_row').html(), {name : channel, date : date, users : users});
                 };
                 $('#data_table_body').append(tpl);
             });
